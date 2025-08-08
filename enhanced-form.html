@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEEK TWO ASSIGNMENT</title>
+</head>
+<body>
+    <h1>Enhanced Form in HTML</h1>
+    <p>This form will show my skills on how to embed a video, an image and an audio. It will show how to create lists, forms and tables using html atrtibutes.</p>
+
+    <!-- Section of lists-both ordered and unordered -->
+     <list>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Oranges</li>
+            <li>Fruits</li>
+            <li>Mangoes</li>
+            <li>Pineapple</li>
+            <li>Guavas</li>
+            <li>Bananas</li>
+        </ul>
+
+        <h2>Ordered List</h2>
+        <ol type ="i">
+            <li>Kisumu</li>
+            <li>Nairobi</li>
+            <li>Kiambu</li>
+            <li>Machakos</li>
+            <li>Siaya</li>
+        </ol>
+    </list>
+
+    <!--Table Section-->
+    <h2>Table of Fruits</h2>
+    <table border="1">
+        <tr>
+            <th>Fruit</th>
+            <th>Color</th>
+            <th>Price (per kg)</th>
+            <th>Country</th>
+            <th>Season</th>
+            <th>Farmer</th>
+        </tr>
+        <tr>
+            <td>Oranges</td>
+            <td>Orange</td>
+            <td>$2.00</td>
+            <td>Kenya</td>
+            <td>Summer</td>
+            <td>Bildad Odhiambo</td>
+        </tr>
+        <tr>
+            <td>Mangoes</td>
+            <td>Yellow</td>
+            <td>$1.50</td>
+            <td>Burundi</td>
+            <td>Summer</td>
+            <td>Jane Wambui</td>
+        </tr>
+        <tr>
+            <td>Pineapple</td>
+            <td>Brown/Yellow</td>
+            <td>$3.00</td>
+            <td>Tanzania</td>
+            <td>Winter</td>
+            <td>John Mwangi</td>
+        </tr>
+        <tr>
+            <td>Guavas</td>
+            <td>Green</td>
+            <td>$1.20</td>
+            <td>Kenya</td>
+            <td>Summer</td>
+            <td>Mary Nyambura</td>
+            </tr>
+            <tr>
+            <td>Bananas</td>
+            <td>Yellow</td>
+            <td>$0.80</td>
+            <td>Uganda</td>
+            <td>All Year</td>
+            <td>Peter Otieno</td>
+          </tr>
+          </table>  
+
+ <!--Embeding an audio-->   
+    <h2>Embedded Audio</h2>
+    <p>Listen to this audio:You will see the glory of God(ha aha ahaaaa )</p>
+ <audio controls>
+    <source src="Enda_Nasi_By_Reuben_Kigame_and_Sifa_Voices-_official_video__Skiza_Code__7010078_(128k).m4a" type="audio/mpeg">
+    Your browser does not support the audio element. 
+    
+ </audio>
+
+    <!--Embedding a video-->
+    <h2>Embedded Video</h2>
+    <p>Watch this video: the nature and some creatures. </p>
+    <video width="320" height="240" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!--Embedding an image-->
+    <h2>Embedded Image</h2>
+    <p>Now have a look of the person you are training to do all these. Really enjoying doing them. </p>
+    <img src = "DSC_0625.jpg" alt="my image" width="300" height="200">
+
+    <!--Form Section-->
+    <h2>This is the Form Section</h2>
+    <form action="Form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="your name" autocomplete="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="ej89@example.com" autocomplete="email"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="+254712345678" pattern="[+][0-9]{12}" autocomplete="tel"><br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="burundi">Burundi</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit" value="Submit">Submit Your Request</button>
+    </form>
+
+</body>
+</html>
